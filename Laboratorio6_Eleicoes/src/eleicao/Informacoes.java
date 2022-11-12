@@ -61,15 +61,15 @@ public class Informacoes {
 		
 	public void mediaVotacaoPorCandidato() {
 		for(int i = 0; i<candidatos.size(); i++) {
-			double media = (double)candidatos.get(i).getVotos()/totalDeVotos();
-			System.out.printf("Média de votos de "+candidatos.get(i).getNome()+" %.3f\n",media);
+			double media = ((double)candidatos.get(i).getVotos()/totalDeVotos())*100;
+			System.out.printf("MÃ©dia de votos de "+candidatos.get(i).getNome()+" %.3f",media);
+			System.out.print("%\n");
 		}
-	}
 	
 	public void opcoes() {
 		System.out.println("-------------------------------------------");
 		System.out.println("[1] Adicionar candidato\n[2] Candidato mais jovem\n[3] Candidato mais velho\n[4] Candidato mais votado\n[5] Candidato menos votado\r\n"
-				+ "[6] Total de votos recebidos por todos os candidatos\n[7] Média de votação recebida pelos candidatos\n[8] Mostrar candidatos\n[9] Sair");
+				+ "[6] Total de votos recebidos por todos os candidatos\n[7] MÃ©dia de votaÃ§Ã£o recebida pelos candidatos\n[8] Mostrar candidatos\n[9] Sair");
 		System.out.println("----------------------------------------------");
 	}
 	
