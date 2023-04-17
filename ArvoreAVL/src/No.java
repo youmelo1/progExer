@@ -1,6 +1,6 @@
 public class No {
 	
-	private int valor, altura, bal;
+	private int valor, altura;
 	private No esquerdo, direito;
 	
 	public No(int valor) {
