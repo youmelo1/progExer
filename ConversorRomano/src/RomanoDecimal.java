@@ -17,7 +17,7 @@ public class RomanoDecimal {
 
     public static void romanInteger(String num, Map<Character, Integer> val) {
         int total = 0;
-        for(int i = num.length()-1; i>=0;i--){
+        for(int i = 0; i<num.length();i++){
             if((i == num.length()-1)){
                total += (int) val.get(num.charAt(i)); 
             }else{
