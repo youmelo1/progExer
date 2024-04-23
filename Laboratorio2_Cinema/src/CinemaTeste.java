@@ -3,5 +3,6 @@ public class CinemaTeste {
 		Cinema cinema = new Cinema();
 
 		cinema.menu();
+		cinema.scanner.close();
 	}
 }
